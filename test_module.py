@@ -1,6 +1,10 @@
 import unittest
 import time_series_visualizer
 import matplotlib as mpl
+import warnings
+
+warnings.filterwarnings("ignore", category=PendingDeprecationWarning)
+warnings.filterwarnings("ignore", category=FutureWarning)
 
 class DataCleaningTestCase(unittest.TestCase):
     def test_data_cleaning(self):
